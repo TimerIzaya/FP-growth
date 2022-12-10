@@ -1,7 +1,7 @@
 all: fpgrowth
 
 fpgrowth: fpgrowth.o tract.o fptree.o
-	gcc $^ -o $@ -lm
+	gcc -g $^ -o $@ -lm
 
 clean:
 	-rm fpgrowth *.o *.d

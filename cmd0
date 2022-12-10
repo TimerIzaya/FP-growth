@@ -1,0 +1,1 @@
+./fpgrowth -i datafile1.dat -n 9 -m 5 -t 0.2 -o fp_output

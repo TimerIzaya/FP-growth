@@ -1,0 +1,24 @@
+// tasks.json
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "makeBeforeDebug",
+            "command": "gcc -g fpgrowth.c tract.c fptree.c -o fpgrowth -lm",
+            "args": [
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
